@@ -11,7 +11,7 @@ proc ::UtilsPyTcl::enumerate {List {start 0}} {
   set output {}
   set _ccc $start ; # index counter
   foreach item $List {
-    lappend output [list ${_ccc} $item ]
+    lappend output ${_ccc} $item 
     incr _ccc 
   }
   return $output

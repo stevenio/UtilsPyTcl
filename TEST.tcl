@@ -7,3 +7,7 @@ namespace import ::UtilsPyTcl::*
 puts [enumerate $myList]
 puts [enumerate $myList 1]
 
+foreach {a b} [enumerate $myList] {
+  puts "a:$a  b:$b"
+}
+
